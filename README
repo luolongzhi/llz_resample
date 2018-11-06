@@ -1,5 +1,13 @@
-
 llz_resample is the free software for resample audio(wav fmt)
+
+__________
+Features
+* Free software
+* Fast speed with polyphase filter
+* Filter is init before process, can use this filter cof design software or hardware
+* Support Linux/MacOS/Window(windows should download and compile by yourself)
+* Easy API to redevelopment(can read llz_resample.h file)
+
 __________
 COPYRIGHTS
 
@@ -34,5 +42,15 @@ PEOPLE
 
 llz_resample is written by:
  - luolongzhi (luolongzhi@gmail.com).
+
+
+-----
+Usage
+
+1. ./configure
+2. make
+3. make install
+
+llz_resample --help
 
 
