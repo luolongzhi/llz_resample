@@ -98,7 +98,7 @@ PROGRAMS = $(bin_PROGRAMS)
 am_llz_resample_OBJECTS = main.$(OBJEXT) llz_parseopt.$(OBJEXT) \
 	llz_fir.$(OBJEXT) llz_resample.$(OBJEXT) llz_wavfmt.$(OBJEXT)
 llz_resample_OBJECTS = $(am_llz_resample_OBJECTS)
-llz_resample_LDADD = $(LDADD)
+llz_resample_DEPENDENCIES =
 AM_V_P = $(am__v_P_@AM_V@)
 am__v_P_ = $(am__v_P_@AM_DEFAULT_V@)
 am__v_P_0 = false
@@ -263,9 +263,8 @@ top_srcdir = @top_srcdir@
 llz_resample_SOURCES = main.c llz_parseopt.c \
 					 llz_fir.c llz_resample.c llz_wavfmt.c
 
-llz_resample_INCLUDES = llz_parseopt.h \
-llz_resample_LDADD=-lm -lpthread
-
+llz_resample_INCLUDES = llz_parseopt.h
+llz_resample_LDADD = -lm -lpthread
 all: config.h
 	$(MAKE) $(AM_MAKEFLAGS) all-am
 
