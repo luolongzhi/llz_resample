@@ -22,7 +22,12 @@ extern "C"
 { 
 #endif  
 
+#include "config.h"
+
+#ifndef HAVE_STDINT_H
 typedef unsigned uintptr_t;
+#endif 
+
 typedef int win_t;
 
 enum {

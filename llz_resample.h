@@ -28,10 +28,12 @@ extern "C"
 { 
 #endif  
 
+#include "config.h"
 
-#ifndef __MacOSX__
+#ifndef HAVE_STDINT_H
 typedef unsigned uintptr_t;
-#endif
+#endif 
+
 
 #define LLZ_DEFAULT_FRAMELEN     1024            /* default num of sample in */
 #define LLZ_FRAMELEN_MAX         (160*147+8192)  /* 8192 no meaning, I just set here to safe regarding */
