@@ -1,0 +1,6 @@
+
+2018-11-06 - Version 1.0 
+	* decimate/intep/resample all support
+	* fast speed with polyphase filter
+	* linux/macos support, window should compile by yourself
+	* this version is extrated from my old llzlab
