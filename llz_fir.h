@@ -26,6 +26,8 @@ extern "C"
 
 #ifndef HAVE_STDINT_H
 typedef unsigned uintptr_t;
+#else 
+#include <stdint.h>
 #endif 
 
 typedef int win_t;
